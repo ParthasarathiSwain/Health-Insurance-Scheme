@@ -1,0 +1,32 @@
+server:
+  port: 9899
+spring:
+  batch:
+     jdbc:
+       initialize-schema: always
+     job:
+      enabled: false
+  application:
+      name: BenifitIssuesApiModule6
+  config:
+      import: "optional:configserver:"
+  mail:
+   host: smtp.gmail.com
+   port: 587
+   username: rajaswain6969@gmail.com
+   password: nglabxcvnfgrpdxs
+   protocol: smtp
+   properties:
+    mail:
+     smtp:
+      auth: true
+      starttls:
+       enable: true
+      connectiontimeout: 5000
+      timeout: 5000
+      writetimeout: 500
+eureka:
+   client:
+     service-url:
+        default-zone: http://localhost:8761/eureka/
+   

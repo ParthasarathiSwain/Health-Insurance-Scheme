@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: ApplicationRegistration
+  config:
+    import: "optional:configserver:"
+eureka:
+  client:
+    service-url:
+       default-zone: http://localhost:8761/eureka/
+ar:
+  ssa-web:
+    url: http://localhost:8899/ssa-api-web/find/{ssn}
+  state: california
+

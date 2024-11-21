@@ -1,0 +1,12 @@
+server:
+  port: 7979
+spring:
+  application:
+    name: ElgiblityDeterminationModule03
+  config:
+    import: "optional:configserver:"
+eureka:
+   client:
+     service-url:
+       default-zone: http://localhost:8761/eureka/
+

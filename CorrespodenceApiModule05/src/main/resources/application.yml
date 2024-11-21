@@ -1,0 +1,30 @@
+server:
+  port: 9897
+spring:
+  application:
+      name: CorrespondenceApiModule05
+  config:
+      import: "optional:configserver:"
+  mail:
+   host: smtp.gmail.com
+   port: 587
+   username: rajaswain6969@gmail.com
+   password: nglabxcvnfgrpdxs
+   protocol: smtp
+   properties:
+    mail:
+     smtp:
+      auth: true
+      starttls:
+       enable: true
+      connectiontimeout: 5000
+      timeout: 5000
+      writetimeout: 5000
+eureka:
+  client:
+    service-url:
+         default-zone: http://localhost:8761/eureka/
+  
+
+
+

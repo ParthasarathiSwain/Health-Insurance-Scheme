@@ -1,0 +1,16 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: ISHProjectConfigServre
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/rajaswain6969/ishproject.git
+          skipSslValidation: true
+          clone-on-start: true
+        bootstrap: false
+server:
+  port: 8888

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: InsuranceSystemProject
+server:
+  port: 8899
+eureka:
+  client:
+     service-url:
+         default-zone: http://localhost:8761/eureka/
